@@ -1,0 +1,57 @@
+Inme se teeno app stores (Amazon Appstore, OPPO App Market, aur Samsung Galaxy Store) India mein chalte hain aur in par app publish karna bilkul free hai.
+
+Yahan inki thodi details di gayi hain:
+
+Amazon Appstore:
+
+India mein chalta hai: Haan, Amazon app aur Fire devices ke through.
+Cost: Developer account banana aur app publish karna bilkul free hai (Google Play Store ki tarah $25 ki fees nahi lagti).
+Samsung Galaxy Store:
+
+India mein chalta hai: Haan, India mein Samsung ke phones bahut popular hain aur un sabhi mein Galaxy Store pre-installed aata hai.
+Cost: Samsung Seller Portal par account banana aur app publish karna free hai.
+OPPO App Market:
+
+India mein chalta hai: Haan, OPPO, Realme aur OnePlus (kuch models) par yeh store aata hai. India mein inka bada user base hai.
+Cost: Developer registration aur app publish karna free hai.
+Aapke liye sabse best approach: Kyunki aap AdMob use kar rahe hain aur aapko apne app ko live karna hai taaki Google Ads ki "Requires review" aur "Limited ad serving" limit hat sake, aap in teeno mein se kisi par bhi apna app publish kar sakte hain. Jab aapka app kisi bhi supported store par live ho jayega, toh aap us store ka link AdMob mein add kar sakte hain, aur Google aapke app ko verify karke ads ki limit hata dega.
+
+Aap chahain toh pehle Amazon Appstore ya Samsung Galaxy Store se shuru kar sakte hain, kyunki inka approval process thoda simple aur fast hota hai.
+
+2:08 PM
+addmob ke alba kon kon se hai jo me android app flatter me uuse kr skta hu and earing kr skta hu ... and inme earning kese kya hoti hai .... or kitni indian dev ok and kitne type ke add ate hai inme approx kise... full info
+2:13 PM
+AdMob ke alawa bhi kayi badhiya Ad Networks hain jinhe aap apne Flutter Android App mein integrate karke achhi earning kar sakte hain. Chaliye sabhi cheezon ko detail mein samajhte hain:
+
+1. AdMob Ke Alawa Top Alternatives (Jo Flutter Support Karte Hain)
+AppLovin (MAX): Aaj ke time mein gaming aur non-gaming apps ke liye yeh AdMob ka sabse bada competitor hai. Inka Flutter SDK bahut stable hai aur inki eCPM (earning rate) kafi achhi hoti hai.
+Unity Ads: Agar aapka app gaming se related hai ya aap video ads dikhana chahte hain, toh Unity Ads bahut best hai. Inka Flutter package easily mil jata hai.
+ironSource: Yeh bhi gaming aur utility apps mein rewarded videos aur interstitials ke liye bahut famous hai. AppLovin ki tarah isme bhi mediation ka option milta hai.
+Meta Audience Network (Facebook Ads): Facebook ke ads direct lagana ab band ho gaya hai, inhe aapko kisi "Mediation" (jaise AdMob, AppLovin ya ironSource) ke through lagana padta hai. India mein inka CPC/eCPM kafi accha milta hai.
+Start.io (Pehle StartApp): Naye developers ke liye yeh bahut aasan hai kyunki isme approval mein jyada problem nahi aati aur iska Flutter plugin available hai.
+InMobi: Kyunki InMobi ek Indian company hai, isliye agar aapke app ke users mostly India se hain, toh yeh aapko Indian advertisers ke ad dikhata hai, jisse click aane ke chances badh jate hain.
+2. Earning Kaise Hoti Hai? (Models)
+Earning mainly 3 tarikon se count hoti hai:
+
+eCPM (Effective Cost Per Mille): Yeh sabse common metric hai. Iska matlab hai ki jab aapke app mein ads 1000 baar dekhe jate hain (impressions), toh aapko kitne paise milenge.
+CPC (Cost Per Click): Agar user ad par click karta hai toh aapko paise milte hain.
+CPI/CPA (Cost Per Install / Action): Agar user ad par click karke koi app install karta hai ya sign-up karta hai (zyadatar Unity aur ironSource mein aisa hota hai). Isme sabse zyada paise milte hain.
+3. Indian Traffic Par Kitni Earning Hoti Hai? (Approximate)
+USA, UK (Tier 1 countries) ke mukable India (Tier 3 country) mein eCPM thoda kam hota hai kyunki yahan advertisers kam paise pay karte hain. Phir bhi, Indian users par earning ka approximate (andaza) kuch aisa rehta hai (Yeh numbers har app aur network par depend karte hain):
+
+Banner Ads: $0.05 se $0.20 per 1000 impressions (Lagbhag ₹4 se ₹16)
+Interstitial (Full Screen) Ads: $0.50 se $1.50 per 1000 impressions (Lagbhag ₹40 se ₹125)
+Rewarded Video Ads: $1.00 se $3.00+ per 1000 impressions (Lagbhag ₹80 se ₹250+)
+Tip: Agar aap mahine ke $100 (₹8,300) kamana chahte hain sirf banner ads se, toh aapko lagbhag 5-10 Lakh impressions chahiye honge. Lekin agar aap Interstitial aur Rewarded ads sahi jagah use karte hain, toh kam impressions mein bhi achhi earning ho sakti hai.
+
+4. Ads Kitne Type Ke Hote Hain?
+Lagbhag har ad network niche diye gaye formats support karta hai:
+
+Banner Ads: Yeh screen ke top ya bottom par ek choti si patti (strip) ki tarah hote hain. User app use karta rehta hai aur ad dikhta rehta hai. Isse earning thodi kam hoti hai par constant rehti hai.
+Interstitial Ads: Yeh full-screen ads hote hain jo do screens ke beech mein aate hain (jaise game over hone par ya next page par jane par). Inme close (X) ka button hota hai. Inse banner se kaafi zyada earning hoti hai.
+Rewarded Video Ads: User ko ek video ad dekhne ke badle app mein kuch reward milta hai (jaise game mein extra life ya premium feature unlock karna). Kyunki user ad ko pura dekhta hai, issey sabse zyada earning hoti hai.
+Native Ads: Yeh ad aapke app ke design mein ghul-mil jate hain (jaise Instagram feed ke beech mein aane wale ads). User ko lagta hai ki yeh app ka hi hissa hai, isliye ispe click rate accha aata hai.
+App Open Ads: Jaise hi user app open karta hai (loading screen par), yeh ad dikhayi deta hai.
+Ek Indian Developer Ke Liye Kya Sahi Rahega?
+Agar aap Google Play Store ki restriction se bachna chahte hain, toh aap AppLovin (MAX) ya Unity Ads use kar sakte hain aur apna app Amazon Appstore ya Samsung Galaxy Store par daal sakte hain. Agar aap AppLovin use karte hain toh usme aap multiple networks (Facebook, InMobi, Unity) ko ek sath jod sakte hain (jise Bidding/Mediation kehte hain) jisse jo ad network sabse zyada paise dega, wahi ad screen par chalega.
+
