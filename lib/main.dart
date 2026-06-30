@@ -4,10 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:flutter/foundation.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
   if (!kIsWeb && (Platform.isAndroid || Platform.isIOS)) {
-    await MobileAds.instance.initialize();
+    MobileAds.instance.initialize().catchError((e) {
+      debugPrint('MobileAds initialization failed: $e');
+      return null;
+    });
   }
   runApp(const MyApp());
 }
